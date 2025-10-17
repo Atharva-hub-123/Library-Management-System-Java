@@ -21,14 +21,14 @@ public class Main {
             sc.nextLine();
 
             switch (choice) {
-                case 1 -> service.addBook();
-                case 2 -> service.registerMember();
-                case 3 -> service.borrowBook();
-                case 4 -> service.returnBook();
-                case 5 -> service.searchBook();
-                case 6 -> service.listAllBooks();
-                case 0 -> System.out.println("👋 Exiting... Thank you for using the Library System!");
-                default -> System.out.println("Invalid choice! Try again.");
+                case 1 : service.addBook();
+                case 2 : service.registerMember();
+                case 3 : service.borrowBook();
+                case 4 : service.returnBook();
+                case 5 : service.searchBook();
+                case 6 : service.listAllBooks();
+                case 0 : System.out.println("👋 Exiting... Thank you for using the Library System!");
+                default : System.out.println("Invalid choice! Try again.");
             }
         } while (choice != 0);
     }
